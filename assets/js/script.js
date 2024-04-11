@@ -8,6 +8,7 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 //notification popup
 function showNotification(url) {
   if (confirm("You will be redirected to a new page:\n" + url)) {
+    window.open(url, '_blank');
       } else {
     
   }
