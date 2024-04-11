@@ -7,8 +7,9 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 //notification popup
 function showNotification(url) {
-  if (confirm("You will be redirected to a new page:\n")) {
-    window.open(url, '_blank');
+  if (confirm("You will be redirected to a new page:\n" + url)) {
+      } else {
+    
   }
 }
 // sidebar variables
