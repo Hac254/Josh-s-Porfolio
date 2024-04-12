@@ -133,7 +133,7 @@
             </a>
           </li>
           <li class="social-item">
-            <a href="https://wa.me/254792195650" target="_blank"   class="social-link">
+            <a href="https://wa.me/254792195650" target="_blank" class="social-link">
               <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
           </li>
@@ -1207,7 +1207,15 @@
   <!--
       - custom js link
     -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "6-3LR0XDgOz7GyxkE",
+      });
+    })();
+  </script>
   <script src="./assets/js/script.js"></script>
 
   <!--
